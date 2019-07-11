@@ -23,7 +23,8 @@ defmodule QrzEx.MixProject do
     [
       {:tesla, "~> 1.2.0"},
       {:hackney, "~> 1.14.0"},
-      {:sweet_xml, "~> 0.6.6"}
+      {:sweet_xml, "~> 0.6.6"},
+      {:ex_doc, "~> 0.19", only: :dev, runtime: false}
     ]
   end
 end
