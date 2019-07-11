@@ -35,7 +35,7 @@ defmodule QrzEx do
       {:ok, %{body: body}} ->
         session = get_session(body)
         entities = get_dxcc_entites(body)
-        process_entities(entities)
+        process_entities(session, entities)
 
       _ ->
         {:error, :server_error}
